@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "name": "Canva + CapCut Creative Production Protocol",
+  "notion": {
+    "operatingSkill": "https://app.notion.com/p/41e6c06cd7f381e68313f6621259c8bc",
+    "projectMemory": "https://app.notion.com/p/41a6c06cd7f38179a4e4cf239f92023e",
+    "enabledForConnectedAgents": true
+  },
+  "masters": {
+    "design": "Canva",
+    "video": "CapCut"
+  },
+  "sourcesOfTruth": {
+    "contextApprovalsAndHistory": "Notion",
+    "technicalRulesAndAutomation": "GitHub",
+    "designEditable": "Canva",
+    "videoEditable": "CapCut"
+  },
+  "clientIsolation": "strict",
+  "workflowStates": [
+    "pedido",
+    "producao",
+    "para_aprovar",
+    "ajuste",
+    "aprovada",
+    "agendada",
+    "publicada"
+  ],
+  "requiredRecordFields": [
+    "cliente",
+    "projeto",
+    "tipo",
+    "formato",
+    "prazo",
+    "responsavel",
+    "status",
+    "brandKit",
+    "canvaFolder",
+    "canvaDesign",
+    "capcutProject",
+    "capcutPreset",
+    "sourceAssets",
+    "version",
+    "preview",
+    "approval",
+    "approvedBy",
+    "approvedAt",
+    "finalExport"
+  ],
+  "approvalGates": [
+    "roteiro_quando_exigido",
+    "previa_visual",
+    "aprovacao_final"
+  ],
+  "canva": {
+    "connectionMode": "connected-app-and-folder-link",
+    "requireExactClientFolder": true,
+    "requireBrandKitAudit": true
+  },
+  "capcut": {
+    "connectionMode": "project-link-and-portable-assets",
+    "directApiAvailable": false,
+    "neverClaimAutomaticSyncWithoutEvidence": true,
+    "acceptedArtifacts": [
+      "projectLink",
+      "sourceMedia",
+      "script",
+      "transcript",
+      "srt",
+      "edl",
+      "xml",
+      "preview",
+      "finalExport"
+    ]
+  },
+  "quality": {
+    "requireRealPreview": true,
+    "requireVersionHistory": true,
+    "requireEvidenceForStatus": true,
+    "preservePreviousVersions": true
+  },
+  "security": {
+    "allowSecretsInGit": false,
+    "allowClientMediaInPublicRepositories": false,
+    "allowSensitiveClientDataInPublicRepositories": false
+  }
+}
