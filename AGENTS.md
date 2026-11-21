@@ -1,64 +1,63 @@
-# Protocolo mestre Canva + CapCut — obrigatório
+# Protocolo obrigatório — início de qualquer tarefa
 
-Fonte operacional no Notion: https://app.notion.com/p/41e6c06cd7f381e68313f6621259c8bc  
-Memória de projetos: https://app.notion.com/p/41a6c06cd7f38179a4e4cf239f92023e
+Antes de produzir, editar, analisar ou alterar qualquer item deste projeto, executar esta sequência. Se alguma leitura falhar, declarar o bloqueio e não fingir sincronização.
 
-Este protocolo se aplica a toda produção de arte, carrossel, capa, apresentação, vídeo, corte, legenda, material de curso e entrega final deste repositório.
+## 1. GitHub
 
-## Maestros da produção
+Ler estes seis arquivos:
 
-- **Canva** é a fonte editável oficial de artes e layouts.
-- **CapCut** é a fonte editável oficial de vídeos, cortes, legendas e acabamento audiovisual.
-- **Notion** centraliza cliente, briefing, Brand Kit, links editáveis, versão, decisões, aprovação e histórico.
-- **GitHub** guarda regras, manifestos, automações, scripts e documentação técnica. Uma exportação PNG, JPG, PDF ou MP4 nunca substitui o arquivo editável mestre.
+- `RebecaFaustino/estudio-marketing-skills/AGENTS.md`
+- `RebecaFaustino/estudio-marketing-skills/.creative/production.json`
+- `RebecaFaustino/estudio-video-ai-dados/AGENTS.md`
+- `RebecaFaustino/estudio-video-ai-dados/.creative/production.json`
+- `RebecaFaustino/estudio-video-ai/AGENTS.md`
+- `RebecaFaustino/estudio-video-ai/.creative/production.json`
 
-No início de cada trabalho, consultar as instruções habilitadas no Notion quando o conector estiver disponível. Se o acesso não estiver disponível, registrar o bloqueio e não afirmar que dados foram sincronizados.
+## 2. Notion
 
-## Isolamento rígido por cliente
+Ler, nesta ordem:
 
-É proibido misturar paleta, fonte, logotipo, fotografia, preset, manual, projeto do Canva, projeto do CapCut, peças aprovadas ou arquivos de clientes diferentes. Antes de produzir, confirmar o cliente e abrir apenas as referências dele.
+1. **🧠 Memória compartilhada — Claude + ChatGPT**
+2. **SKILL — Canva + CapCut | Maestro de produção em todos os projetos**
+3. **SKILL — Canva | Pré-auditoria obrigatória por cliente e fidelidade ao Brand Kit**
+4. Banco **Clientes — estilos e particularidades**, incluindo a linha do cliente da tarefa.
+
+A tabela é a fonte viva de cores, fontes, tom de voz, palavras proibidas, particularidades e vínculos. Informação “A confirmar” nunca pode ser inventada.
+
+## Papel de Canva e CapCut
+
+- **Canva e CapCut são maestros de referência e bases visuais/audiovisuais. Não são os criadores automáticos.**
+- ChatGPT e Claude criam a proposta, roteiro, arte ou vídeo no fluxo de produção e apresentam prévia à Rebeca.
+- Somente após aprovação explícita do material e somente quando Rebeca pedir, o conteúdo pode ser colocado no Canva ou CapCut para eventual ajuste.
+- Os materiais originais das pastas dos clientes são somente leitura.
+- Em cada pasta de cliente, agentes só podem trabalhar na subpasta **GPT E CLAUDE**.
+- Mesmo dentro de **GPT E CLAUDE**, criar, editar, mover, renomear ou excluir exige autorização explícita para aquela ação.
+- Nunca alterar ou excluir materiais fora de **GPT E CLAUDE**.
+- Nunca misturar identidade, arquivos, fotos, logotipos, paletas, fontes ou projetos entre clientes.
 
 ## Fluxo obrigatório
 
-1. Identificar cliente, objetivo, público, formato, quantidade, prazo, canais e referências.
-2. Conferir o perfil e o Brand Kit do cliente no Notion.
-3. Abrir a pasta exata do cliente no Canva ou o projeto exato no CapCut.
-4. Revisar os materiais aprovados e mais recentes do mesmo cliente. Recência não significa aprovação.
-5. Produzir uma nova versão sem sobrescrever a anterior.
-6. Auditar conteúdo, identidade, dimensões, margens, legibilidade, contraste, rostos, logotipo, CRM/RQE quando aplicável, áudio, legendas e área segura.
-7. Gerar prévia visível e registrar evidência.
-8. Solicitar aprovação. Nada é publicado ou tratado como final sem o OK registrado.
-9. Após aprovação, exportar no formato correto, preservar o editável mestre e atualizar o histórico no Notion.
+1. Confirmar cliente e ler sua linha no Notion.
+2. Consultar Brand Kit, manual, peças aprovadas e materiais recentes como referência.
+3. Criar fora dos arquivos mestres, preservando rostos reais, fotografias, logos, CRM/RQE e regras éticas.
+4. Gerar prévia real e auditá-la em celular e desktop.
+5. Mostrar à Rebeca com ações claras: **Aprovar**, **Pedir ajuste** e, quando necessário, **Rebeca, preciso do seu OK**.
+6. Registrar ajustes e versões sem apagar histórico.
+7. Após aprovação, só enviar ao Canva/CapCut se Rebeca solicitar; salvar exclusivamente em **GPT E CLAUDE**.
+8. Nada é publicado sem OK explícito.
+9. Ao concluir algo importante, acrescentar uma linha no Diário da Memória compartilhada: data — ChatGPT/Claude — o que foi feito. Nunca apagar histórico.
 
-## Canva
+## Qualidade e evidência
 
-- Trabalhar na pasta correta do cliente e usar o Brand Kit confirmado.
-- Preservar logotipos e fotografias reais; não redesenhar marcas nem alterar traços faciais.
-- Verificar todas as páginas em desktop e mobile.
-- Registrar link do design, versão, prévia e aprovação.
+- “Aplicado”, “pronto”, “sincronizado” ou “aprovado” exigem arquivo ou evidência verificável.
+- A falta de paleta, fonte, CRM/RQE, logo, permissão ou material essencial bloqueia a produção e deve ser descrita com precisão.
+- Ajustes geram nova versão; a anterior permanece recuperável.
+- Não registrar tokens, senhas, cookies, dados de pacientes ou segredos no GitHub ou Notion.
+- Em repositórios públicos, não incluir mídias, contratos, dados pessoais ou links privados de clientes.
 
-## CapCut
+## Monte Sinai
 
-- Registrar no Notion o link do projeto, preset de legendas, mídia de origem, roteiro, versão, prévia e exportação final.
-- O fluxo audiovisual passa por: pedido → transcrição → cortes sugeridos → aprovação dos cortes → edição → legendas/áudio → prévia → ajustes → aprovação final → exportação.
-- Sem conector oficial disponível, usar vínculo verificável por link do projeto e pacote portátil, acompanhado de roteiro, SRT, EDL/XML quando aplicável, prévia e exportação.
-- Nunca declarar sincronização automática, renderização ou upload concluído sem teste e evidência.
+O manual específico de 20 páginas indicado no Canva é a referência operacional. Não o substituir automaticamente por outro PDF. Preservar integralmente os rostos e corpos reais dos quatro médicos; usar roxo predominante e amarelo/laranja apenas conforme a campanha aprovada.
 
-## Aprovação e qualidade
-
-- Toda peça precisa de prévia real, versão e situação verdadeira.
-- “Aplicado”, “pronto” ou “aprovado” só pode aparecer quando houver arquivo ou evidência correspondente.
-- Ajustes criam nova versão; a versão anterior permanece recuperável para comparação.
-- O material final deve apontar para seu editável no Canva ou no CapCut.
-
-## Segurança
-
-- Nunca gravar tokens, senhas, cookies, chaves de API ou dados sensíveis no Git.
-- Em repositórios públicos, nunca incluir mídias de clientes, contratos, dados pessoais ou links privados não destinados à publicação.
-- Antes de alterar ativos existentes, preservar histórico e possibilidade de rollback.
-
-## Exceção registrada
-
-Para Monte Sinai, o manual específico de 20 páginas indicado no Canva é a referência operacional; não o substituir automaticamente por outro PDF. Confirmar cores e fontes definitivas nos arquivos mestres.
-
-Este arquivo estabelece a política operacional dos agentes. Ele não é, sozinho, prova de integração: a conclusão depende de links, permissões e testes reais nos aplicativos.
+Fonte operacional: https://app.notion.com/p/41e6c06cd7f381e68313f6621259c8bc  
+Memória: https://app.notion.com/p/41a6c06cd7f38179a4e4cf239f92023e
