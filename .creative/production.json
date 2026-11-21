@@ -1,80 +1,86 @@
 {
-  "version": 1,
-  "name": "Canva + CapCut Creative Production Protocol",
-  "notion": {
-    "operatingSkill": "https://app.notion.com/p/41e6c06cd7f381e68313f6621259c8bc",
-    "projectMemory": "https://app.notion.com/p/41a6c06cd7f38179a4e4cf239f92023e",
-    "enabledForConnectedAgents": true
+  "version": 2,
+  "name": "Canva + CapCut Reference Maestro Protocol",
+  "startupChecklist": {
+    "required": true,
+    "github": [
+      "RebecaFaustino/estudio-marketing-skills/AGENTS.md",
+      "RebecaFaustino/estudio-marketing-skills/.creative/production.json",
+      "RebecaFaustino/estudio-video-ai-dados/AGENTS.md",
+      "RebecaFaustino/estudio-video-ai-dados/.creative/production.json",
+      "RebecaFaustino/estudio-video-ai/AGENTS.md",
+      "RebecaFaustino/estudio-video-ai/.creative/production.json"
+    ],
+    "notion": [
+      "🧠 Memória compartilhada — Claude + ChatGPT",
+      "SKILL — Canva + CapCut | Maestro de produção em todos os projetos",
+      "SKILL — Canva | Pré-auditoria obrigatória por cliente e fidelidade ao Brand Kit",
+      "Clientes — estilos e particularidades"
+    ],
+    "failClosed": true
   },
-  "masters": {
-    "design": "Canva",
-    "video": "CapCut"
-  },
-  "sourcesOfTruth": {
-    "contextApprovalsAndHistory": "Notion",
-    "technicalRulesAndAutomation": "GitHub",
-    "designEditable": "Canva",
-    "videoEditable": "CapCut"
+  "roles": {
+    "creation": "ChatGPT and Claude production workflow",
+    "designReference": "Canva",
+    "videoReference": "CapCut",
+    "contextApprovalHistory": "Notion",
+    "rulesAutomation": "GitHub"
   },
   "clientIsolation": "strict",
+  "referencePolicy": {
+    "canvaAndCapcutAreReferenceBases": true,
+    "areAutomaticCreators": false,
+    "originalsReadOnly": true,
+    "allowedAgentFolder": "GPT E CLAUDE",
+    "writesRequireExplicitPermission": true,
+    "uploadsRequireApprovalAndExplicitRequest": true,
+    "editsRequireExplicitPermission": true,
+    "movesRequireExplicitPermission": true,
+    "renamesRequireExplicitPermission": true,
+    "deletesRequireExplicitPermission": true,
+    "outsideAllowedFolderReadOnly": true
+  },
   "workflowStates": [
     "pedido",
     "producao",
     "para_aprovar",
     "ajuste",
     "aprovada",
+    "enviada_ao_editor_sob_pedido",
     "agendada",
     "publicada"
   ],
+  "approvalGates": [
+    "roteiro_quando_exigido",
+    "previa_visual",
+    "aprovacao_final",
+    "autorizacao_para_enviar_ao_canva_ou_capcut"
+  ],
+  "attentionAction": {
+    "requiredWhenBlockedOrAwaitingApproval": true,
+    "label": "Rebeca, preciso do seu OK",
+    "includeTaskOrConversationLinkWhenAvailable": true
+  },
   "requiredRecordFields": [
     "cliente",
     "projeto",
     "tipo",
     "formato",
     "prazo",
-    "responsavel",
     "status",
     "brandKit",
-    "canvaFolder",
-    "canvaDesign",
-    "capcutProject",
-    "capcutPreset",
     "sourceAssets",
     "version",
     "preview",
     "approval",
     "approvedBy",
     "approvedAt",
+    "adjustments",
     "finalExport"
   ],
-  "approvalGates": [
-    "roteiro_quando_exigido",
-    "previa_visual",
-    "aprovacao_final"
-  ],
-  "canva": {
-    "connectionMode": "connected-app-and-folder-link",
-    "requireExactClientFolder": true,
-    "requireBrandKitAudit": true
-  },
-  "capcut": {
-    "connectionMode": "project-link-and-portable-assets",
-    "directApiAvailable": false,
-    "neverClaimAutomaticSyncWithoutEvidence": true,
-    "acceptedArtifacts": [
-      "projectLink",
-      "sourceMedia",
-      "script",
-      "transcript",
-      "srt",
-      "edl",
-      "xml",
-      "preview",
-      "finalExport"
-    ]
-  },
   "quality": {
     "requireRealPreview": true,
+    "requireMobileAndDesktopAudit": true,
     "requireVersionHistory": true,
     "requireEvidenceForStatus": true,
     "preservePreviousVersions": true
@@ -83,5 +89,9 @@
     "allowSecretsInGit": false,
     "allowClientMediaInPublicRepositories": false,
     "allowSensitiveClientDataInPublicRepositories": false
+  },
+  "completion": {
+    "appendImportantWorkToNotionDiary": true,
+    "diaryFormat": "data — ChatGPT/Claude — o que foi feito"
   }
 }
