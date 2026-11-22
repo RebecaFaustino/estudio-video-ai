@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "name": "Canva + CapCut Reference Maestro Protocol",
   "startupChecklist": {
     "required": true,
@@ -93,5 +93,52 @@
   "completion": {
     "appendImportantWorkToNotionDiary": true,
     "diaryFormat": "data — ChatGPT/Claude — o que foi feito"
+  },
+  "continuityPolicy": {
+    "version": 1,
+    "stateSource": "private_project_context",
+    "requiredContextFields": [
+      "activeObjective",
+      "scope",
+      "latestExplicitDecision",
+      "taskState",
+      "blockers",
+      "nextAuthorizedAction"
+    ],
+    "pause": {
+      "inheritsToSubtasks": true,
+      "genericContinueResumes": false,
+      "explicitScopedResumeRequired": true
+    },
+    "routing": {
+      "useActiveConversation": true,
+      "importUnrelatedHistory": false,
+      "reopenCompletedOnGenericContinue": false,
+      "clarifyOnlyMaterialAmbiguity": true,
+      "continueIndependentAuthorizedWork": true
+    },
+    "evidence": {
+      "types": [
+        "documentary",
+        "read",
+        "write",
+        "installation",
+        "end_to_end"
+      ],
+      "requireScopeAndSource": true,
+      "documentationProvesRuntime": false,
+      "installedPluginProvesConnection": false,
+      "searchBeforeRequestingReupload": true,
+      "inspectCandidateContents": true
+    },
+    "retry": {
+      "requireChangedConditionsAfterBlockedAttempt": true,
+      "reuseValidEvidence": true
+    },
+    "completion": {
+      "requiresAcceptanceEvidence": true,
+      "createUnrequestedWork": false
+    },
+    "enforcement": "agent_instruction_contract_not_runtime_enforcement"
   }
 }
